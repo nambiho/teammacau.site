@@ -1,22 +1,29 @@
 <template>
-  <Menu />
-  <router-view></router-view>
+  <top-menu />
+  <router-view />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Menu } from '@/components/Header'
+import TopMenu from '@/components/Header/TopMenu.vue'
 
 export default defineComponent({
   name: 'App',
-  compoentns: {
-    Menu
+  components: {
+    TopMenu
   }
 })
 </script>
 
-<style src="@/assets/scss/global.scss" lang="scss" />
 <style lang="scss">
+@import "@/assets/scss/global.scss";
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,5 +32,6 @@ export default defineComponent({
   color: #2c3e50;
   width: 100%;
   height: 100%;
+  // font-weight: 500;
 }
 </style>
