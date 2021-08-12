@@ -1,8 +1,11 @@
 <template>
   <div class="navbar">
     <div class="logo">
-      <router-link tag="span" to="/">
-        TeamMacau
+      <router-link tag="span" to="/" @click="clickLink">
+        <div class="logo-box">
+          <img src="@/assets/images/KakaoTalk_Image_2021-08-12-16-34-55_003.png" class="logo-image">
+          <div class="logo-title">TeamMacau</div>
+        </div>
       </router-link>
     </div>
 
@@ -82,6 +85,21 @@
 </script>
 
 <style lang="scss">
+.logo-box {
+  display: flex;
+  height: 62px;
+  align-items: center;
+}
+
+.logo-image{
+  height: 100%;
+}
+
+.logo-title {
+  display: inline-block;
+  margin-left: 5px;
+}
+
 .navbar {
   background: darkblue;
   color: white;
@@ -89,6 +107,9 @@
   justify-content: space-around;
   align-items: center;
   font-weight: 500;
+  height: 62px;
+
+
 
   .nav-list {
     list-style-type: none;
@@ -122,13 +143,17 @@
 }
 
 @media screen and (max-width: 480px) {
+  .logo-title {
+    display: none;
+  }
+
   .navbar {
     flex-direction: column;
 
     .logo {
       width: 100%;
       text-align: left;
-      padding: 20px;
+      //padding: 20px;
       height: 100%;
     }
 

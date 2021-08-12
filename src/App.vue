@@ -22,6 +22,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  min-width: 480px;
 }
 
 #app {
