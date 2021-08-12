@@ -3,7 +3,7 @@
     <div class="logo">
       <router-link tag="span" to="/" @click="clickLink">
         <div class="logo-box">
-          <img src="@/assets/images/KakaoTalk_Image_2021-08-12-16-34-55_003.png" class="logo-image">
+          <img src="@/assets/images/KakaoTalk_Image_2021-08-12-16-34-55_003.copy.png" class="logo-image">
           <div class="logo-title">TeamMacau</div>
         </div>
       </router-link>
@@ -87,7 +87,7 @@
 <style lang="scss">
 .logo-box {
   display: flex;
-  height: 62px;
+  height: 50px;
   align-items: center;
 }
 
@@ -153,7 +153,8 @@
     .logo {
       width: 100%;
       text-align: left;
-      //padding: 20px;
+      padding-left: 19px;
+      padding-top: 6px;
       height: 100%;
     }
 

@@ -17,6 +17,7 @@
 
     <div class="home-timeline-wrap">
       <timeline />
+      <img src="@/assets/images/KakaoTalk_Image_2021-08-12-16-34-55_003.copy.png">
       <!-- <div>2021 7 마카오 회칙 제정</div>
       <div>2021 7 왕돌초 투어</div>
       <div>2021 6 2021 개해제</div>
